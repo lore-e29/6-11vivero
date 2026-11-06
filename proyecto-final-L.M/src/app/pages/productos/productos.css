@@ -1,0 +1,174 @@
+
+/* ===== ESTILOS GENERALES DE PRODUCTOS ===== */
+
+.productos {
+  
+  background-color: #c1e4c4;
+}
+
+
+.container {
+  max-width: 1200px;
+   background-color: #c1e4c4;
+}
+
+/* Fondo y título */
+section {
+  min-height: 70vh;
+   
+}
+
+h1 {
+  color: #285943;
+  letter-spacing: -1px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 15px auto 0;
+  line-height: 1.8;
+   background-color: #c1e4c4;
+  
+}
+
+/* ===== TARJETAS DE PRODUCTOS ===== */
+
+.card {
+  background-color: #f5fff7;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(40, 89, 67, 0.18) !important;
+}
+
+/* Imágenes */
+.producto-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .producto-img {
+  transform: scale(1.04);
+}
+
+/* Contenido de las tarjetas */
+.card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Categorías */
+.badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
+/* Nombre del producto */
+.card-title {
+  color: #285943;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/* Descripción */
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+/* Precio */
+.card-body h5.text-success {
+  color: #34744f !important;
+  font-size: 1.4rem;
+  margin: 12px 0 20px;
+}
+
+/* Botón */
+.card .btn-success {
+  background-color: #285943;
+  border-color: #285943;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 16px;
+  font-weight: 700;
+  transition: background-color 0.3s ease,
+              transform 0.2s ease;
+}
+
+.card .btn-success:hover {
+  background-color: #1d4231;
+  border-color: #1d4231;
+  transform: scale(1.02);
+}
+
+.card .btn-success:focus-visible {
+  outline: 3px solid #91bd9e;
+  outline-offset: 3px;
+}
+
+/* ===== DISEÑO RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 991px) {
+  .producto-img {
+    height: 230px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 575px) {
+  section.container {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
+  h1.display-4 {
+    font-size: 2.1rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .producto-img {
+    height: 240px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Accesibilidad: reducir animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .producto-img,
+  .card .btn-success {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:hover .producto-img,
+  .card .btn-success:hover {
+    transform: none;
+  }
+}

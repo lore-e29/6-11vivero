@@ -1,0 +1,138 @@
+
+/* ===== NAVBAR VIVERO VERDE VIDA ===== */
+
+.navbar-vivero {
+  background: linear-gradient(90deg, #f5f8ef, #e4efd9);
+  padding: 14px 0;
+  box-shadow: 0 3px 12px rgba(30, 70, 40, 0.12);
+  border-bottom: 2px solid #c5dcb5;
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar-vivero .logo-vivero {
+  color: #28583b;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-vivero .logo-vivero:hover {
+  color: #659447;
+}
+
+/* Enlaces del menú */
+.navbar-vivero .navbar-nav {
+  gap: 8px;
+}
+
+.navbar-vivero .nav-link {
+  color: #355b3b;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.navbar-vivero .nav-link:hover {
+  color: #ffffff;
+  background-color: #4f8054;
+}
+
+/* Enlace activo */
+.navbar-vivero .nav-link.active {
+  color: #28583b;
+  background-color: #d2e6c4;
+  font-weight: 700;
+}
+
+/* Botón catálogo */
+.navbar-vivero .btn-verde {
+  display: inline-block;
+  background: linear-gradient(135deg, #3f7548, #28583b);
+  color: #ffffff;
+  padding: 11px 22px;
+  border: 2px solid #28583b;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(40, 88, 59, 0.18);
+  transition: all 0.3s ease;
+}
+
+/* Efecto del botón */
+.navbar-vivero .btn-verde:hover {
+  background: #e0edcf;
+  color: #28583b;
+  border-color: #3f7548;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(40, 88, 59, 0.22);
+}
+
+/* Botón hamburguesa */
+.navbar-vivero .navbar-toggler {
+  border: 2px solid #7ba36c;
+  border-radius: 10px;
+  padding: 7px 10px;
+  box-shadow: none;
+}
+
+.navbar-vivero .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(91, 139, 76, 0.2);
+}
+
+/* Icono hamburguesa */
+.navbar-vivero .navbar-toggler-icon {
+  filter: sepia(35%) saturate(180%) hue-rotate(55deg);
+}
+
+/* ===== DISEÑO RESPONSIVE ===== */
+
+@media (max-width: 991.98px) {
+  .navbar-vivero {
+    padding: 12px 0;
+  }
+
+  .navbar-vivero .navbar-collapse {
+    padding-top: 15px;
+  }
+
+  .navbar-vivero .navbar-nav {
+    align-items: stretch !important;
+    gap: 5px;
+  }
+
+  .navbar-vivero .nav-link {
+    padding: 12px 15px;
+  }
+
+  .navbar-vivero .nav-link:hover {
+    padding-left: 22px;
+  }
+
+  .navbar-vivero .nav-item.ms-lg-3 {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .navbar-vivero .btn-verde {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+  .navbar-vivero .logo-vivero {
+    font-size: 1.35rem;
+  }
+
+  .navbar-vivero .navbar-toggler {
+    padding: 5px 8px;
+  }
+}

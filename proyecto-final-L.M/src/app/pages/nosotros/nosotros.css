@@ -1,0 +1,159 @@
+
+.nosotros-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.nosotros-titulo {
+  text-align: left;
+}
+
+.nosotros-titulo h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
+.nosotros-info {
+  text-align: left;
+}
+
+.nosotros-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+  .nosotros-contenido {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .nosotros-titulo h1 {
+    font-size: 32px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===== SECCIÓN SOBRE NOSOTROS ===== 
+
+.nosotros {
+  background-color: #f7f8f2;
+  padding: 80px 20px !important;
+  color: #2b5233;
+  text-align: center;
+  background-color: #c1e4c4;
+}
+
+.nosotros .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nosotros .row {
+  justify-content: center;
+}
+
+.nosotros .col-lg-6 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+*/
+
+
+
+/* Etiqueta 
+
+.nosotros .etiqueta {
+  display: inline-block;
+  color: #214729;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}*/
+
+
+/* Título
+
+.nosotros h1 {
+  color: #285943;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+*/
+
+
+/* Párrafos
+
+.nosotros p {
+  color: #000000;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin: 0 auto 20px;
+  max-width: 750px;
+}
+
+.nosotros .btn-verde {
+  background-color: #285943;
+  border-color: #285943;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+*/
+
+
+/* Tablets */
+@media (max-width: 991px) {
+  .nosotros {
+    padding: 60px 20px !important;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .nosotros {
+    padding: 40px 15px !important;
+  }
+
+  .nosotros .etiqueta {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .nosotros h1 {
+    font-size: 2rem;
+  }
+
+  .nosotros p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+}
+
+
+
+

@@ -1,0 +1,42 @@
+<div class="card ">
+    <hr>
+    <div class="d-flex justify-content-center  ">
+        <img [ src ]="articulos.imagen"
+         [ alt ]="articulos.nombre"
+         class="card-img-top" >
+
+    </div>
+    <div>
+        <h5 class="card-body text-center">{{ 
+articulos.nombre }}
+        <p >${{ articulos.precio }}</p> </h5>
+        <button class="btn btn-success" (click)="onAgregar()">Comprar</button>
+
+    </div>
+</div>
+
+
+<!--
+<div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 shadow-sm border-0">
+        <img
+          src=""
+          class="card-img-top producto-img"
+          alt="Plantas verdes naturales">
+
+        <div class="card-body">
+          <span class="badge bg-primary mb-2">Exterior</span>
+          <h5 class="card-title fw-bold">Planta verde natural</h5>
+          <p class="card-text text-secondary">
+            Una opción fresca para decorar patios y balcones.
+          </p>
+          <h5 class="text-success fw-bold">$8.000</h5>
+          <button type="button" class="btn btn-success w-100">
+            Consultar producto
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+-->

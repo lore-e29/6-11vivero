@@ -1,0 +1,345 @@
+
+/* =================================
+   ESTILOS GENERALES - FLORENA
+================================= */
+
+:host {
+  display: block;
+  color: #304b35;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+section {
+  overflow: hidden;
+}
+
+section h2 {
+  color: #28583b;
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+section p {
+  color: #687768;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* =================================
+   ETIQUETAS
+================================= */
+
+.etiqueta {
+  display: inline-block;
+  color: #5baa56;
+  background-color: #b8d898;
+  border: 1px solid #82d344;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+/* =================================
+   PORTADA PRINCIPAL - HERO
+================================= */
+
+.hero-inicio {
+  padding: 85px 0;
+  position: relative;
+  background-color: #c1e4c4;
+
+
+}
+
+.hero-inicio h1 {
+  color: #244b31;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 25px;
+  letter-spacing: -1.5px;
+}
+
+.hero-inicio h1 span {
+  color: #6b9b4b;
+  display: inline-block;
+}
+
+.hero-inicio p {
+  color: #000000;
+  font-size: 1.15rem;
+  max-width: 500px;
+  margin-bottom: 30px;
+  line-height: 1.9;
+}
+
+/* Imagen principal */
+
+.imagen-inicio {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 18px 40px rgba(35, 75, 43, 0.2);
+  transition: transform 0.4s ease,
+              box-shadow 0.4s ease;
+
+}
+
+.imagen-inicio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(35, 75, 43, 0.25);
+    background-image:"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=85 ";
+
+}
+
+/* =================================
+   BOTONES VERDES
+================================= */
+
+.btn-verde {
+  display: inline-block;
+  background: linear-gradient(135deg, #4d8048, #28583b);
+  color: #ffffff !important;
+  border: 2px solid #356448;
+  border-radius: 30px;
+  padding: 12px 26px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(40, 88, 59, 0.18);
+  transition: all 0.3s ease;
+}
+
+.btn-verde:hover {
+  background: #a6b992;
+  color: #28583b !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(40, 88, 59, 0.2);
+}
+
+.btn-verde:focus-visible {
+  outline: 3px solid #4ec503;
+  outline-offset: 4px;
+}
+
+/* =================================
+   SECCIÓN DE CATEGORÍAS
+================================= */
+
+section.py-5 {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important;
+  background-color: #ffffff;
+}
+
+section.py-5 .text-center.mb-5 {
+  margin-bottom: 45px !important;
+}
+
+section.py-5 h2 {
+  font-size: 2.2rem;
+}
+
+section.py-5 .text-center.mb-5 p {
+  margin-top: 10px;
+}
+
+/* Tarjetas de categorías */
+
+.categoria-inicio {
+  display: block;
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #e6eedf;
+  box-shadow: 0 8px 22px rgba(35, 75, 43, 0.1);
+  transition: transform 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.categoria-inicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Sombra sobre la imagen para destacar el título */
+
+.categoria-inicio::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(18, 48, 27, 0.85),
+    rgba(18, 48, 27, 0.05) 65%
+  );
+  transition: background 0.3s ease;
+}
+
+.categoria-inicio h3 {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  right: 20px;
+  bottom: 15px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+
+.categoria-inicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(35, 75, 43, 0.2);
+}
+
+.categoria-inicio:hover img {
+  transform: scale(1.08);
+}
+
+.categoria-inicio:hover h3 {
+  transform: translateY(-5px);
+}
+
+.categoria-inicio:focus-visible {
+  outline: 3px solid #6b9b4b;
+  outline-offset: 4px;
+}
+
+/* =================================
+   SECCIÓN FINAL DE CATÁLOGO
+================================= */
+
+section.py-5 .text-center.mt-5 {
+  margin-top: 75px !important;
+  padding: 40px 25px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #f2f7eb, #e2eed7);
+}
+
+section.py-5 .text-center.mt-5 h2 {
+  margin-bottom: 15px;
+}
+
+section.py-5 .text-center.mt-5 p {
+  margin-bottom: 25px;
+}
+
+/* =================================
+   TABLETS
+================================= */
+
+@media (max-width: 991.98px) {
+  .hero-inicio {
+    padding: 60px 0;
+  }
+
+  .hero-inicio h1 {
+    font-size: 2.8rem;
+  }
+
+  .imagen-inicio {
+    height: 370px;
+  }
+
+  .categoria-inicio {
+    height: 250px;
+  }
+
+  section h2,
+  section.py-5 h2 {
+    font-size: 1.9rem;
+  }
+}
+
+/* =================================
+   CELULARES
+================================= */
+
+@media (max-width: 575.98px) {
+  .hero-inicio {
+    padding: 45px 0;
+    text-align: center;
+  }
+
+  .hero-inicio h1 {
+    font-size: 2.4rem;
+    letter-spacing: -0.8px;
+  }
+
+  .hero-inicio p {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imagen-inicio {
+    height: 280px;
+    border-radius: 18px;
+    margin-top: 10px;
+  }
+
+  .btn-verde {
+    padding: 11px 20px;
+    font-size: 0.95rem;
+  }
+
+  section.py-5 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  section h2,
+  section.py-5 h2 {
+    font-size: 1.7rem;
+  }
+
+  .etiqueta {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+
+  .categoria-inicio {
+    height: 210px;
+    border-radius: 15px;
+  }
+
+  .categoria-inicio h3 {
+    font-size: 1.1rem;
+    left: 8px;
+    right: 8px;
+    bottom: 13px;
+  }
+
+  section.py-5 .text-center.mt-5 {
+    margin-top: 45px !important;
+    padding: 30px 18px;
+  }
+}
+
+/* Accesibilidad: reducir animaciones si el usuario lo prefiere */
+
+@media (prefers-reduced-motion: reduce) {
+  .imagen-inicio,
+  .categoria-inicio,
+  .categoria-inicio img,
+  .categoria-inicio h3,
+  .btn-verde {
+    transition: none;
+  }
+}

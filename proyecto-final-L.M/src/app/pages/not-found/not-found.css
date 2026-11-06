@@ -1,0 +1,139 @@
+
+/* Contenedor principal */
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(
+    135deg,
+    #e8f5e9,
+    #f1f8e9,
+    #dcedc8
+  );
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenido */
+.not-found .container {
+  max-width: 700px;
+  padding: 55px 40px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 35px rgba(46, 125, 50, 0.15);
+  text-align: center;
+}
+
+/* Icono */
+.icono-404 {
+  font-size: 85px;
+  margin-bottom: 15px;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+/* Título principal */
+.not-found h1 {
+  font-size: 65px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+/* Subtítulo */
+.not-found h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #558b2f;
+  margin-bottom: 20px;
+}
+
+/* Párrafo */
+.not-found p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Botones generales */
+.not-found .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+/* Botón verde */
+.btn-verde {
+  background-color: #388e3c;
+  color: white;
+  border: 2px solid #388e3c;
+}
+
+.btn-verde:hover {
+  background-color: #1b5e20;
+  border-color: #1b5e20;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+/* Botón verde outline */
+.btn-outline-verde {
+  background-color: transparent;
+  color: #388e3c;
+  border: 2px solid #388e3c;
+}
+
+.btn-outline-verde:hover {
+  background-color: #388e3c;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(46, 125, 50, 0.2);
+}
+
+/* Animación de la planta */
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Diseño responsive */
+@media (max-width: 576px) {
+  .not-found .container {
+    padding: 35px 20px;
+  }
+
+  .icono-404 {
+    font-size: 65px;
+  }
+
+  .not-found h1 {
+    font-size: 45px;
+  }
+
+  .not-found h2 {
+    font-size: 21px;
+  }
+
+  .not-found p {
+    font-size: 15px;
+  }
+
+  .not-found .btn {
+    display: block;
+    margin: 12px auto;
+    width: 100%;
+    max-width: 250px;
+  }
+}

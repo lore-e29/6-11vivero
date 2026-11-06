@@ -1,0 +1,18 @@
+<div class="container mt-5 ">
+  @if(productos.length > 0){
+  <div class="row">
+    @for (let producto of productos; track producto.id) {
+      <div class="col-md-3">
+        <app-producto-card 
+        [articulos]="producto" 
+        (agregarAlCarrito)="onAgregarAlCarrito($event)">
+        </app-producto-card>
+      </div>
+    }
+  </div>
+  }
+ @else{
+  <p class="text-muted">No hay productos disponibles por el momento.</p>
+ }
+ 
+</div>

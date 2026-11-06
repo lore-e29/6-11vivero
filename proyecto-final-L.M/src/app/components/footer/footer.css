@@ -1,0 +1,124 @@
+
+/* ===== FOOTER VIVERO VERDE VIDA ===== */
+.footer-vivero {
+  background: linear-gradient(135deg, #173d2b, #28583b, #386b45);
+  color: #f1f5e9;
+  padding-top: 30px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  border-top: 5px solid #8bbf65;
+}
+
+/* Logo */
+.footer-vivero .footer-logo {
+  display: inline-block;
+  color: #c5e6a3;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-vivero .footer-logo:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Textos */
+.footer-vivero p {
+  color: #dce8d5;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* Títulos */
+.footer-vivero h3 {
+  color: #c5e6a3;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+/* Detalle decorativo debajo de los títulos */
+.footer-vivero h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #8bbf65;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+/* Lista de enlaces */
+.footer-vivero ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-vivero ul li {
+  margin-bottom: 10px;
+}
+
+.footer-vivero ul li a {
+  color: #e0ead9;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.footer-vivero ul li a:hover {
+  color: #c5e6a3;
+  padding-left: 8px;
+}
+
+/* Separador */
+.footer-vivero .footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #a4c58d;
+  opacity: 0.5;
+  margin: 25px 0 20px;
+}
+
+/* Derechos reservados */
+.footer-vivero small {
+  display: block;
+  color: #c8d8bf;
+  font-size: 0.85rem;
+  padding-bottom: 10px;
+}
+
+/* Iconos y emojis */
+.footer-vivero p,
+.footer-vivero .footer-logo {
+  overflow-wrap: break-word;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 767px) {
+  .footer-vivero {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer-vivero .footer-logo {
+    font-size: 1.6rem;
+  }
+
+  .footer-vivero h3::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-vivero p {
+    font-size: 0.9rem;
+  }
+
+  .footer-vivero .footer-divider {
+    margin-top: 20px;
+  }
+}

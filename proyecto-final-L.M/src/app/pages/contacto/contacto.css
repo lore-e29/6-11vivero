@@ -1,0 +1,76 @@
+
+/* Sección de contacto */
+.contacto {
+    background-color: #c1e4c4;
+    padding: 80px 20px;
+    min-height: 400px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Contenedor */
+.contacto .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Contenido centrado */
+.contacto .text-center {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 45px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Etiqueta superior */
+.contacto .etiqueta {
+    display: inline-block;
+    color: #11da75;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Título principal */
+.contacto h1 {
+    font-size: 36px;
+    color: #235c1e;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Párrafos de contacto */
+.contacto p {
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+/* Efecto al pasar el mouse */
+.contacto .text-center:hover {
+    box-shadow: 0 12px 30px rgb(13, 83, 34);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .contacto {
+        padding: 40px 15px;
+    }
+
+    .contacto .text-center {
+        padding: 30px 20px;
+    }
+
+    .contacto h1 {
+        font-size: 28px;
+    }
+
+    .contacto p {
+        font-size: 15px;
+    }
+}
